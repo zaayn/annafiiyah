@@ -1,0 +1,14 @@
+<link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome/css/font-awesome.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/datatables/datatables.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/select2/select2.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/datepicker/datepicker3.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/lightbox.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/dropzone/basic.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/dropzone/dropzone.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/summernote/summernote.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/summernote/summernote-bs3.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/plugins/colorpicker/bootstrap-colorpicker.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/sweetalert.min.css') }}">

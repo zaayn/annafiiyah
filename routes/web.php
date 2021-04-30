@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main_page/welcome');
 });
 
 Route::group(['prefix' => 'admin'], function(){
@@ -104,4 +104,10 @@ Route::group(['prefix' => 'admin'], function(){
 
 	// Dropdown Daerah
     Route::post('/dropdownDaerah', 'DropdownAddressController@postDropdown')->name('dropdownAddress');
+});
+
+Route::get('/seeder', function()
+{
+    \Artisan::call('db:seed');
+    echo 'seeder complete';
 });

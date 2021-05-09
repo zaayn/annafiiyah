@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('main_page/welcome');
-});
+Route::get('/', 'MainPageController@index')->name('welcome.page');
+Route::get('/contact', 'MainPageController@contact')->name('main.contact');
 
 Route::group(['prefix' => 'admin'], function(){
 	// Route admin home

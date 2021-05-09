@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-2">
-                    <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Educ<span>.</span></a></div>
+                    <div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Annafiiyah<span>.</span></a></div>
                 </div>
                 <div class="col-xs-10 text-right menu-1">
                     <ul>
@@ -54,7 +54,7 @@
                                 <li><a href="#">Santri</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact">Contact</a></li>
                         <li class="btn-cta"><a href="/admin/home"><span>Login</span></a></li>
                     </ul>
                 </div>

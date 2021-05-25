@@ -27,9 +27,9 @@
                             <a>Profil</a>
                             <ul class="dropdown">
                                 <li><a href="sejarah">Sejarah</a></li>
-                                <li><a href="#">Asas dan Tujuan</a></li>
-                                <li><a href="#">Bentuk Pendidikan</a></li>
-                                <li><a href="#">Saana dan Prasarana</a></li>
+                                <li><a href="asas_dan_tujuan">Asas dan Tujuan</a></li>
+                                <li><a href="bentuk_pendidikan">Bentuk Pendidikan</a></li>
+                                <li><a href="sarpras">Sarana dan Prasarana</a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">

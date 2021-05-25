@@ -15,6 +15,9 @@
 Route::get('/', 'MainPageController@index')->name('welcome.page');
 Route::get('/contact', 'MainPageController@contact')->name('main.contact');
 Route::get('/sejarah', 'MainPageController@sejarah')->name('main.sejarah');
+Route::get('/asas_dan_tujuan', 'MainPageController@asas_dan_tujuan')->name('main.asas_dan_tujuan');
+Route::get('/sarpras', 'MainPageController@sarpras')->name('main.sarpras');
+Route::get('/bentuk_pendidikan', 'MainPageController@bentuk_pendidikan')->name('main.bentuk_pendidikan');
 
 Route::group(['prefix' => 'admin'], function(){
 	//Route menu master main page
@@ -110,7 +113,7 @@ Route::group(['prefix' => 'admin'], function(){
     Route::post('/dropdownDaerah', 'DropdownAddressController@postDropdown')->name('dropdownAddress');
 });
 
-Route::get('/master_seeder', function()
+Route::get('/seeder', function()
 {
     \Artisan::call('db:seed');
 });

@@ -112,7 +112,7 @@ Route::group(['prefix' => 'admin'], function(){
 
 Route::get('/master_seeder', function()
 {
-    \Artisan::call('db:seed --class=MasterSeeder');
+    \Artisan::call('db:seed');
 });
 Route::get('/migrate', function()
 {

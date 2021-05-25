@@ -110,9 +110,9 @@ Route::group(['prefix' => 'admin'], function(){
     Route::post('/dropdownDaerah', 'DropdownAddressController@postDropdown')->name('dropdownAddress');
 });
 
-Route::get('/seeder', function()
+Route::get('/master_seeder', function()
 {
-    \Artisan::call('db:seed');
+    \Artisan::call('db:seed --class=MasterSeeder');
 });
 Route::get('/migrate', function()
 {

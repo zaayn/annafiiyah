@@ -113,5 +113,8 @@ Route::group(['prefix' => 'admin'], function(){
 Route::get('/seeder', function()
 {
     \Artisan::call('db:seed');
-    echo 'seeder complete';
+});
+Route::get('/migrate', function()
+{
+    \Artisan::call('migrate');
 });

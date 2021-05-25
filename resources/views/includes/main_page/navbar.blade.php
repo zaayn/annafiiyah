@@ -26,7 +26,7 @@
                         <li class="has-dropdown">
                             <a>Profil</a>
                             <ul class="dropdown">
-                                <li><a href="#">Sejarah</a></li>
+                                <li><a href="sejarah">Sejarah</a></li>
                                 <li><a href="#">Asas dan Tujuan</a></li>
                                 <li><a href="#">Bentuk Pendidikan</a></li>
                                 <li><a href="#">Saana dan Prasarana</a></li>

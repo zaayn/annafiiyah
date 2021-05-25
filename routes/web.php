@@ -11,10 +11,15 @@
 |
 */
 
+//main page
 Route::get('/', 'MainPageController@index')->name('welcome.page');
 Route::get('/contact', 'MainPageController@contact')->name('main.contact');
+Route::get('/sejarah', 'MainPageController@sejarah')->name('main.sejarah');
 
 Route::group(['prefix' => 'admin'], function(){
+	//Route menu master main page
+	Route::get('/master_main_page', 'MasterController@index')->name('master.index');
+
 	// Route admin home
 	Route::get('/', 'AdminController@index')->name('admin.home')->middleware('checkLogin');
 	Route::get('/home', 'AdminController@index')->name('admin.home')->middleware('checkLogin');

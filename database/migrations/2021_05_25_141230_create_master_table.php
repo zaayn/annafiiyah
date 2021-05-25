@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateSantriTable1 extends Migration
+class CreateMasterTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class UpdateSantriTable1 extends Migration
      */
     public function up()
     {
-        Schema::table('santri', function (Blueprint $table) {
-            $table->string('santri_number')->nullable(false)->after('santri_id');
+        Schema::create('master', function (Blueprint $table) {
+            $table->increments('master_id')->unique();
+            $table->string('judul');
+            $table->string('isi')->nullable();
+            $table->string('image')->nullable();
+            $table->timestamps();
         });
     }
 
@@ -25,6 +29,6 @@ class UpdateSantriTable1 extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('master');
     }
 }

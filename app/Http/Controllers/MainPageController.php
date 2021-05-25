@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\DB;
+use App\Master;
 class MainPageController extends Controller
 {
     public function index()
@@ -13,5 +14,10 @@ class MainPageController extends Controller
     public function contact()
     {
         return view('main_page/contact');
+    }
+    public function sejarah()
+    {
+        $sejarah = Master::where('judul','Sejarah')->get();
+        return view('main_page/sejarah')->with('sejarah',$sejarah);
     }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		@yield('css')
 	    @include('includes.main_page.head')
 	</head>
 	<body>
@@ -18,6 +19,7 @@
 	</div>
 	
 	@include('includes.main_page.js')
+	@yield('js')
 	</body>
 </html>
 

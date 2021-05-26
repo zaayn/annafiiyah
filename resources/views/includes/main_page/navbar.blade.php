@@ -26,32 +26,32 @@
                         <li class="has-dropdown">
                             <a>Profil</a>
                             <ul class="dropdown">
-                                <li><a href="sejarah">Sejarah</a></li>
-                                <li><a href="asas_dan_tujuan">Asas dan Tujuan</a></li>
-                                <li><a href="bentuk_pendidikan">Bentuk Pendidikan</a></li>
-                                <li><a href="sarpras">Sarana dan Prasarana</a></li>
+                                <li><a href="sejarah"><span>Sejarah</span></a></li>
+                                <li><a href="asas_dan_tujuan"><span>Asas dan Tujuan</span></a></li>
+                                <li><a href="bentuk_pendidikan"><span>Bentuk Pendidikan</span></a></li>
+                                <li><a href="sarpras"><span>Sarana dan Prasarana</span></a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">
                             <a>Pendaftaran</a>
                             <ul class="dropdown">
-                                <li><a href="#">SDTQ</a></li>
-                                <li><a href="#">SMK Putri</a></li>
-                                <li><a href="#">BLKK ANF</a></li>
+                                <li><a href="#"><span>SDTQ</span></a></li>
+                                <li><a href="#"><span>SMK Putri</span></a></li>
+                                <li><a href="#"><span>BLKK ANF</span></a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">
                             <a>Pengumuman</a>
                             <ul class="dropdown">
-                                <li><a href="#">Tahunan</a></li>
-                                <li><a href="#">Bulanan</a></li>
+                                <li><a href="#"><span>Tahunan</span></a></li>
+                                <li><a href="#"><span>Bulanan</span></a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">
                             <a>Berita</a>
                             <ul class="dropdown">
-                                <li><a href="#">Seputar Kegiatan</a></li>
-                                <li><a href="#">Santri</a></li>
+                                <li><a href="#"><span>Seputar Kegiatan</span></a></li>
+                                <li><a href="#"><span>Santri</span></a></li>
                             </ul>
                         </li>
                         <li><a href="contact">Contact</a></li>

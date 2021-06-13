@@ -22,6 +22,7 @@ Route::get('/bentuk_pendidikan', 'MainPageController@bentuk_pendidikan')->name('
 Route::group(['prefix' => 'admin'], function(){
 	//Route menu master main page
 	Route::get('/master_main_page', 'MasterController@index')->name('master.index');
+	Route::get('/testimoni', 'TestimoniController@index')->name('testimoni.index');
 
 	// Route admin home
 	Route::get('/', 'AdminController@index')->name('admin.home')->middleware('checkLogin');

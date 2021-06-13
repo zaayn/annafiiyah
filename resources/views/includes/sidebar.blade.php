@@ -23,6 +23,24 @@
           <i class="fa fa-tasks"></i> <span class="nav-label">Master</span>
         </a>
       </li>
+      <li class="treeview">
+        <a href="">
+          <i class="fa fa-plus-circle"></i> 
+          <span>Pendaftaran</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+          <ul class="treeview-menu">
+            <li style="height: 30px; margin: auto;">
+              <a href="#"><span style="color: white">SDTQ</span></a>
+            </li>
+            <li style="height: 30px; margin: auto;">
+              <a href="#"><span style="color: white">SMK Putri</span></a>
+            </li>
+            <li style="height: 30px; margin: auto;">
+              <a href="#"><span style="color: white">BLKK Anf</span></a>
+            </li>
+          </ul>
+      </li>
       <li class="">
         <a href="http://localhost:8000/admin/tipe_pembayaran">
           <i class="fa fa-credit-card"></i> <span class="nav-label">Tipe Pembayaran</span>

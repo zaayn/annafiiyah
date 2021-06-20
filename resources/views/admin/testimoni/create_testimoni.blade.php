@@ -24,7 +24,7 @@
                   @endif
                   <br>
 
-                <form action="#" method="post">
+                <form action="{{route('store.testimoni')}}" method="post">
                     {{ csrf_field() }}
                     
 

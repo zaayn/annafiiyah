@@ -16,14 +16,14 @@
         <div class="ibox">
             <div class="ibox-content">
                 <div class="table-responsive">
+                    @include('admin.shared.components.alert')
                     <table class="table table-striped table-bordered table-hover dataTable" id="index-table">
                         <thead>
                             <tr>
                                 <th width="2%">No</th>
-                                <th width="25%">Nama</th>
-                                <th width="18%">Umur</th>
-                                <th width="25%">Asal</th>
-                                <th width="25%">Profesi</th>
+                                <th width="23%">Nama</th>
+                                <th width="20%">Profesi</th>
+                                <th width="50%">Ungkapan</th>
                                 <th width="5%">Aksi</th>
                             </tr>
                         </thead>
@@ -32,12 +32,15 @@
                                 <tr>
                                     <td>{{ $no++ }}</td>
                                     <td>{{ $testimoni->nama }}</td>
-                                    <td>{{ $testimoni->umur }}</td>
-                                    <td>{{ $testimoni->asal }}</td>
                                     <td>{{ $testimoni->profesi }}</td>
+                                    <td>{{ $testimoni->ungkapan }}</td>
                                     <td>
-                                        <a href="#" class="btn btn-info btn-sm">
-                                            <span class="fa fa-pencil"></span>
+                                        <a 
+                                            onclick="return confirm('Apakah anda yakin akan menghapus data ini ?')" 
+                                            href="{{route('destroy.testimoni',$testimoni->testimoni_id)}}" 
+                                            class="btn btn-danger btn-sm"
+                                        >
+                                            <span class="fa fa-trash"></span>
                                         </a>
                                     </td>
                                 </tr>

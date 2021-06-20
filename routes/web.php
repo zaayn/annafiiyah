@@ -26,6 +26,8 @@ Route::group(['prefix' => 'admin'], function(){
 	//Route Testimoni
 	Route::get('/testimoni', 'TestimoniController@index')->name('testimoni.index');
 	Route::get('/create_testimoni', 'TestimoniController@create')->name('create.testimoni');
+	Route::post('/store/testimoni', 'TestimoniController@store')->name('store.testimoni');
+	Route::get('/destroy/testimoni{testimoni_id}', 'TestimoniController@destroy')->name('destroy.testimoni');
 
 	// Route admin home
 	Route::get('/', 'AdminController@index')->name('admin.home')->middleware('checkLogin');

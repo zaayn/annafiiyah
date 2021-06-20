@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Master;
+use App\Testimoni;
 class MainPageController extends Controller
 {
     public function index()
     {
-        return view('main_page/welcome');
+        $data['testimonials'] = Testimoni::all();
+        return view('main_page/welcome',$data);
     }
     public function contact()
     {

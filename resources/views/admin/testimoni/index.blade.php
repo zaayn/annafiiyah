@@ -1,6 +1,16 @@
 @extends('layouts.default')
 @section('content')
-
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox">
+            <div class="ibox-content">
+                <a href="{{ route('create.testimoni') }}">
+                    <button type="button" class="btn btn-primary btn-raised"> Create</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="row">
     <div class="col-lg-12">
         <div class="ibox">

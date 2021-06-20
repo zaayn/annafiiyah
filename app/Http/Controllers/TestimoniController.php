@@ -14,4 +14,8 @@ class TestimoniController extends Controller
         $data['testimonis'] = Testimoni::all();
         return view('admin.testimoni.index',$data);
     }
+    public function create()
+    {
+        return view('admin.testimoni.create_testimoni');
+    }
 }

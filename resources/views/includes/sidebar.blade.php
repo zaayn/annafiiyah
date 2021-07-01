@@ -14,12 +14,12 @@
         </div>
       </li>
       <li class="active">
-        <a href="home">
+        <a href="{{asset('/admin/home')}}">
           <i class="fa fa-home"></i> <span class="nav-label">Home</span>
         </a>
       </li>
       <li class="">
-        <a href="master_main_page">
+        <a href="{{asset('/admin/master_main_page')}}">
           <i class="fa fa-tasks"></i> <span class="nav-label">Master</span>
         </a>
       </li>
@@ -42,37 +42,37 @@
           </ul>
       </li>
       <li class="">
-        <a href="tipe_pembayaran">
+        <a href="{{asset('/admin/tipe_pembayaran')}}">
           <i class="fa fa-credit-card"></i> <span class="nav-label">Tipe Pembayaran</span>
         </a>
       </li>
       <li class="">
-        <a href="santri">
+        <a href="{{asset('/admin/santri')}}">
           <i class="fa fa-group"></i> <span class="nav-label">Santri</span>
         </a>
       </li>
       <li class="">
-        <a href="transaksi">
+        <a href="{{asset('/admin/transaksi')}}">
           <i class="fa fa-money"></i> <span class="nav-label">Transaksi</span>
         </a>
       </li>
       <li class="">
-        <a href="laporan">
+        <a href="{{asset('/admin/laporan')}}">
           <i class="fa fa-file-text-o"></i> <span class="nav-label">Laporan</span>
         </a>
       </li>
       <li class="">
-        <a href="user">
+        <a href="{{asset('/admin/user')}}">
           <i class="fa fa-users"></i> <span class="nav-label">User</span>
         </a>
       </li>
       <li class="">
-        <a href="pesantrenprofile">
+        <a href="{{asset('/admin/pesantrenprofile')}}">
           <i class="fa fa-user"></i> <span class="nav-label">Profil</span>
         </a>
       </li>
       <li class="">
-        <a href="testimoni">
+        <a href="{{asset('/admin/testimoni')}}">
           <i class="fa fa-quote-right"></i> <span class="nav-label">Testimoni</span>
         </a>
       </li>

@@ -19,8 +19,8 @@ class MainPageController extends Controller
     }
     public function sejarah()
     {
-        $data = Master::where('judul','Sejarah')->get();
-        return view('main_page/sejarah')->with('data',$data);
+        $data['master'] = Master::where('judul','Sejarah')->get();
+        return view('main_page/sejarah',$data);
     }
     public function asas_dan_tujuan()
     {

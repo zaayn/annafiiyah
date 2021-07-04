@@ -22,6 +22,9 @@ Route::get('/bentuk_pendidikan', 'MainPageController@bentuk_pendidikan')->name('
 Route::group(['prefix' => 'admin'], function(){
 	//Route menu master main page
 	Route::get('/master_main_page', 'MasterController@index')->name('master.index');
+	Route::get('/master_item/{id}', 'MasterController@master_item')->name('master.item');
+	Route::get('/edit_master/{id}', 'MasterController@edit_master')->name('edit.master');
+	Route::post('/update_master/{id}', 'MasterController@update_master')->name('update.master');
 
 	//Route Testimoni
 	Route::get('/testimoni', 'TestimoniController@index')->name('testimoni.index');

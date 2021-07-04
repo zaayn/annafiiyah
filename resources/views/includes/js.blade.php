@@ -16,6 +16,12 @@
 <script src="{{ url('js/plugins/colorpicker/bootstrap-colorpicker.min.js') }}"></script>
 <script src="{{ url('js/myjs.js') }}"></script>
 <script src="{{ url('js/lightbox.js') }}"></script>
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+</script>
 <script>
 $(document).ready(function(){
     $('#index-table').DataTable({

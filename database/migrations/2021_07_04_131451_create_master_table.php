@@ -14,9 +14,9 @@ class CreateMasterTable extends Migration
     public function up()
     {
         Schema::create('master', function (Blueprint $table) {
-            $table->increments('master_id')->unique();
+            $table->increments('master_id')->UNIQUE();
             $table->string('judul');
-            $table->string('isi')->nullable();
+            $table->longText('isi')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });
@@ -29,6 +29,6 @@ class CreateMasterTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('master');
+        SCHEMA::dropIfExists('master');
     }
 }

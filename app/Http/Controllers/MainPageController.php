@@ -24,17 +24,17 @@ class MainPageController extends Controller
     }
     public function asas_dan_tujuan()
     {
-        $data = Master::where('judul','Asas dan Tujuan')->get();
-        return view('main_page/asas_dan_tujuan')->with('data',$data);
+        $data['master'] = Master::where('judul','Asas dan Tujuan')->get();
+        return view('main_page/asas_dan_tujuan',$data);
     }
     public function sarpras()
     {
-        $data = Master::where('judul','Sarana Prasarana')->get();
-        return view('main_page/sarpras')->with('data',$data);
+        $data['master'] = Master::where('judul','Sarana Prasarana')->get();
+        return view('main_page/sarpras',$data);
     }
     public function bentuk_pendidikan()
     {
-        $data = Master::where('judul','Bentuk Pendidikan')->get();
-        return view('main_page/bentuk_pendidikan')->with('data',$data);
+        $data['master'] = Master::where('judul','Bentuk Pendidikan')->get();
+        return view('main_page/bentuk_pendidikan',$data);
     }
 }

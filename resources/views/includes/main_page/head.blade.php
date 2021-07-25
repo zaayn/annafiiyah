@@ -45,3 +45,6 @@
 
 	<!-- Modernizr JS -->
 	<script src="main_asset/js/modernizr-2.6.2.min.js"></script>
+
+	{{-- my css --}}
+	<link rel="stylesheet" href="main_asset/css/mycss.css">

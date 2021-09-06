@@ -88,6 +88,27 @@ class ReportController extends Controller
         $pdf =  PDF::loadView('admin.report.santri.export', compact("model","filter","profile"));
         return $pdf->stream();
     }
+    public function santriExportExcel()
+    {
+        $filter  = Session::get('filterSessionSantri');
+        $profile = PesantrenProfile::first();
+        $model   = Santri::query()->active();
+
+        if(isset($filter['santri_id']) && !empty($filter['santri_id'])){
+            $model = $model->where('santri_id', $filter['santri_id']);
+        }
+
+        if(isset($filter['start_date']) && !empty($filter['start_date'])){
+            $model = $model->whereDate('transaction_date', ">=", Carbon::parse($filter['start_date'])->format('Y-m-d'));
+        }
+
+        if(isset($filter['end_date']) && !empty($filter['end_date'])){
+            $model = $model->whereDate('transaction_date', "<=", Carbon::parse($filter['end_date'])->format('Y-m-d'));
+        }
+
+        $model = $model->get();
+        return view('admin.report.santri.excel', compact("model","filter","profile"));
+    }
 
     public function transaksi()
     {

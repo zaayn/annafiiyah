@@ -89,6 +89,7 @@ Route::group(['prefix' => 'admin'], function(){
 	    Route::get('/santri', 'ReportController@santri')->name('admin.report.santri.index');
 	    Route::get('/santri/search', 'ReportController@santriSearch')->name('admin.report.santri.search');
 	    Route::get('/santri/export', 'ReportController@santriExport')->name('admin.report.santri.export');
+		Route::get('/santri/export/excel', 'ReportController@santriExportExcel')->name('admin.report.santri.export.excel');
 
 	    // Report Transaksi
 	    Route::get('/transaksi', 'ReportController@transaksi')->name('admin.report.transaksi.index');

@@ -37,6 +37,9 @@
                 <a href="{{ route('admin.report.santri.export') }}" target="_blank">
                     <button type="button" class="btn btn-primary">Export</button>
                 </a>
+                <a href="{{ route('admin.report.santri.export.excel') }}" target="_blank">
+                    <button type="button" class="btn btn-primary">Export Excel</button>
+                </a>
             </div>
             <div class="ibox-content">
                 <div class="table-responsive">

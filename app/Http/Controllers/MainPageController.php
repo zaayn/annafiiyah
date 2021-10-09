@@ -46,9 +46,9 @@ class MainPageController extends Controller
     {
         $this->validate($request,[
             'nama' => 'required',
-            'panggilan' => 'required|date',
+            'panggilan' => 'required',
             'tempat_lahir' => 'required',
-            'tgl_lahir' => 'required',
+            'tgl_lahir' => 'required|date',
             'jenis_kelamin' => 'required',
             'anak_ke' => 'required',
             'status_dlm_keluarga' =>'required',
@@ -91,9 +91,10 @@ class MainPageController extends Controller
         $siswa->pend_terakhir_ibu          = $request->pend_terakhir_ibu;
         $siswa->pendapatan_ibu    = $request->pendapatan_ibu;
         $siswa->no_tlp_ibu          = $request->no_tlp_ibu;
+        $siswa->status          = "Mendaftar";
 
         if($siswa->save()){
-            return redirect('/pendaftaran_SMK')->with('success', 'item berhasil ditambahkan');
+            return redirect('/pendaftaran_SMK')->with('success', 'Data Berhasil ditambahkan. silahkan cek email anda');
         }else{
             dd("gagal");
         }

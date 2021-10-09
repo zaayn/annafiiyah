@@ -42,6 +42,11 @@ Route::group(['prefix' => 'admin'], function(){
 	Route::get('/destroy/testimoni{testimoni_id}', 'TestimoniController@destroy')->name('destroy.testimoni');
 	Route::get('/register', 'UserController@registerPost')->name('admin.registerPost');
 
+	//route pendaftaran
+	Route::get('/smkputri', 'PendaftaranController@smkputri')->name('page.smk');
+	Route::get('/detail_siswa/{id}', 'PendaftaranController@detail')->name('siswa.detail');
+	Route::get('/confirm/{id}', 'PendaftaranController@confirm')->name('siswa.confirm');
+
 	// Route Menu Santri
 	Route::group(['prefix' => 'santri', 'middleware' => 'checkLogin'], function(){
 		Route::get('/', 'SantriController@index')->name('admin.santri.index');

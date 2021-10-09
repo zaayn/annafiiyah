@@ -34,7 +34,7 @@
               <a href="#"><span style="color: white">SDTQ</span></a>
             </li>
             <li style="height: 30px; margin: auto;">
-              <a href="#"><span style="color: white">SMK Putri</span></a>
+              <a href="{{asset('/admin/smkputri')}}"><span style="color: white">SMK Putri</span></a>
             </li>
             <li style="height: 30px; margin: auto;">
               <a href="#"><span style="color: white">BLKK Anf</span></a>

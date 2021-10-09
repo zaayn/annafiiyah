@@ -37,6 +37,7 @@ class CreatePendaftaranSmkTable extends Migration
             $table->string('pend_terakhir_ibu')->nullable();
             $table->string('pendapatan_ibu')->nullable();
             $table->string('no_tlp_ibu')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

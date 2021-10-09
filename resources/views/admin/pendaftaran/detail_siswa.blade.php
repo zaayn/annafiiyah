@@ -13,8 +13,6 @@
                     <a style="float: right" href="{{ route('siswa.confirm',$siswa->siswa_id) }}">
                         <button type="button" class="btn btn-primary btn-raised">Confirm Pembayaran</button>
                     </a>
-                @else
-                    Terdaftar
                 @endif
             </div>
         </div>

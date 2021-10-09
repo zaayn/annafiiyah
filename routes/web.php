@@ -25,6 +25,7 @@ Route::get('/sarpras', 'MainPageController@sarpras')->name('main.sarpras');
 Route::get('/bentuk_pendidikan', 'MainPageController@bentuk_pendidikan')->name('main.bentuk_pendidikan');
 
 Route::get('/pendaftaran_SMK', 'MainPageController@pendaftaran_smk')->name('main.pendaftaran_smk');
+Route::post('/submitPendaftaran', 'MainPageController@submitPendafatran')->name('submit.pendaftaran_smk');
 
 Route::group(['prefix' => 'admin'], function(){
 	Route::get('/home', 'AdminController@index')->name('admin.home')->middleware('checkLogin');

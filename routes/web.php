@@ -10,6 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route admin home
+Route::get('/', 'AdminController@index')->name('admin.home')->middleware('checkLogin');
+Route::get('/login', 'UserController@login')->name('admin.login');
+Route::get('/logout', 'UserController@logout')->name('admin.logout');
+Route::post('/loginPost', 'UserController@loginPost')->name('admin.loginPost');
 
 //main page
 Route::get('/', 'MainPageController@index')->name('welcome.page');
@@ -22,6 +27,7 @@ Route::get('/bentuk_pendidikan', 'MainPageController@bentuk_pendidikan')->name('
 Route::get('/pendaftaran_SMK', 'MainPageController@pendaftaran_smk')->name('main.pendaftaran_smk');
 
 Route::group(['prefix' => 'admin'], function(){
+	Route::get('/home', 'AdminController@index')->name('admin.home')->middleware('checkLogin');
 	//Route menu master main page
 	Route::get('/master_main_page', 'MasterController@index')->name('master.index');
 	Route::get('/master_item/{id}', 'MasterController@master_item')->name('master.item');
@@ -33,14 +39,6 @@ Route::group(['prefix' => 'admin'], function(){
 	Route::get('/create_testimoni', 'TestimoniController@create')->name('create.testimoni');
 	Route::post('/store/testimoni', 'TestimoniController@store')->name('store.testimoni');
 	Route::get('/destroy/testimoni{testimoni_id}', 'TestimoniController@destroy')->name('destroy.testimoni');
-
-	// Route admin home
-	Route::get('/', 'AdminController@index')->name('admin.home')->middleware('checkLogin');
-	Route::get('/home', 'AdminController@index')->name('admin.home')->middleware('checkLogin');
-	Route::get('/login', 'UserController@login')->name('admin.login');
-	Route::get('/logout', 'UserController@logout')->name('admin.logout');
-	Route::post('/loginPost', 'UserController@loginPost')->name('admin.loginPost');
-
 	Route::get('/register', 'UserController@registerPost')->name('admin.registerPost');
 
 	// Route Menu Santri

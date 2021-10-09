@@ -55,7 +55,7 @@
                             </ul>
                         </li>
                         <li><a href="contact">Contact</a></li>
-                        <li class="btn-cta"><a href="/admin/home"><span>Login</span></a></li>
+                        <li class="btn-cta"><a href="/login"><span>Login</span></a></li>
                     </ul>
                 </div>
             </div>

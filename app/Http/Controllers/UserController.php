@@ -29,7 +29,7 @@ class UserController extends Controller
     public function login()
     {
         $profile = PesantrenProfile::first();
-
+        // dd(Session::get('login'));
         if(Session::get('login')){
             return redirect()->route('admin.home');
         }

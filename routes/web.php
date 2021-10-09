@@ -19,6 +19,8 @@ Route::get('/asas_dan_tujuan', 'MainPageController@asas_dan_tujuan')->name('main
 Route::get('/sarpras', 'MainPageController@sarpras')->name('main.sarpras');
 Route::get('/bentuk_pendidikan', 'MainPageController@bentuk_pendidikan')->name('main.bentuk_pendidikan');
 
+Route::get('/pendaftaran_SMK', 'MainPageController@pendaftaran_smk')->name('main.pendaftaran_smk');
+
 Route::group(['prefix' => 'admin'], function(){
 	//Route menu master main page
 	Route::get('/master_main_page', 'MasterController@index')->name('master.index');

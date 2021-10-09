@@ -36,7 +36,7 @@
                             <a>Pendaftaran</a>
                             <ul class="dropdown">
                                 <li><a href="#"><span>SDTQ</span></a></li>
-                                <li><a href="#"><span>SMK Putri</span></a></li>
+                                <li><a href="pendaftaran_SMK"><span>SMK Putri</span></a></li>
                                 <li><a href="#"><span>BLKK ANF</span></a></li>
                             </ul>
                         </li>

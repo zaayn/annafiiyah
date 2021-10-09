@@ -37,4 +37,8 @@ class MainPageController extends Controller
         $data['master'] = Master::where('judul','Bentuk Pendidikan')->get();
         return view('main_page/bentuk_pendidikan',$data);
     }
+    public function pendaftaran_smk()
+    {
+        return view('main_page/pendaftaranSMK');
+    }
 }
